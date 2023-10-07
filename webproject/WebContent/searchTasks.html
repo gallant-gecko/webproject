@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Tasks</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Search Tasks</h1>
+    <form action="SearchTasks" method="POST">
+        <label for="searchTitle">Title:</label>
+        <input type="text" id="searchTitle" name="searchTitle">
+        <br><br>
+        
+        <label for="searchDueDate">Due Date:</label>
+        <input type="date" id="searchDueDate" name="searchDueDate">
+        <br><br>
+        
+        <label for="searchPriority">Priority:</label>
+        <select id="searchPriority" name="searchPriority">
+            <option value="">--Select Priority--</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <br><br>
+        
+        <input type="submit" value="Search">
+    </form>
+    <br>
+    <a href="addTask.html">Add New Task</a>
+</body>
+</html>
